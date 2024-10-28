@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loginAndsigninPage</title>
+  <link rel="stylesheet" href="../css/loginPage.css">
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+  <section>
+    <h1>Login</h1>
+    <!-- across the page of sighn up -->
+    <div id="sighnup">
+      <p>Not a member?</p>
+      <form action="../html/sighnupPage.html">
+        <button id="sighnup-btn">
+          SIGHN-UP
+        </button>
+      </form>
+    </div>
+    <!-- inputs of login -->
+    <div id="login">
+      <h4>Username</h4>
+      <div id="username-input">
+        <input id="userName" type="text" placeholder="Type your username">
+      </div>
+      <h4>Password</h4>
+      <div id="password-input">
+        <input id="pass" type="password" placeholder="Type your password">
+      </div>
+    </div>
+    <!-- button that make the login check -->
+    <button onclick="check()" id="login-btn">
+      LOGIN
+    </button>
+  </section>
+  <script src="../js/loginPage.js"></script>
+</body>
+
+</html>

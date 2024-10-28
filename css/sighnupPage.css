@@ -1,0 +1,71 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+/* General design */
+section {
+  margin: 0 auto;
+  margin-top: -10%;
+  width: 400px;
+  height: 600px;
+  transform: translateY(40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 20px;
+  box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+}
+/* title design */
+h1 {
+  margin: 20px 0 10px 0;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+/* title input  design */
+h4 {
+  margin: 20px 180px 5px 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+/*  inputs design */
+input {
+  width: 100%;
+  font-size:1.1rem;
+  font-weight: 300;
+  padding: 7px 0;
+  border: none;
+  background-color: inherit;
+}
+#username-input, #password-input,#mail-input,#UserLastname-input,#Fone-input{
+  width: 90%;
+  border-bottom: 1px solid #a4a4a4;
+}
+/* button design */
+#sighn-btn,#login-btn {
+  border: none;
+  padding: 7px 20px;
+  width: 90%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-image: linear-gradient(43deg, hsla(340,100%,76%,1) 0%, hsla(269,100%,77%,1) 100%);
+  color: white;
+  font-weight: 600;
+}
+#signup {
+  width: 70%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: hsl(269deg 26% 47%);
+}

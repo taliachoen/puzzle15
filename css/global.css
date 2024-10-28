@@ -1,0 +1,19 @@
+body {
+	background-color: #fff9f9;
+	min-height: 1000px;
+	min-width: 1000px;
+	height: 96vh;
+	width: 99%;
+  background-repeat: no-repeat !important;
+	background-color:hsla(0,100%,88%,1);
+	background-image:
+  radial-gradient(at 80% 0%, hsl(189, 100%, 56%) 0px, transparent 50%),
+  radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 100%, hsla(269,100%,77%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+  * {
+    font-family: "Mountains of Christmas", cursive;
+  }

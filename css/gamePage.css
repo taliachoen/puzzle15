@@ -1,0 +1,171 @@
+/* עיצוב כללי */
+* {
+	font-family: "Mountains of Christmas", cursive;
+  }
+/* עיצוב כותרת */
+#GAME {
+	position:relative;
+	color: #7beef2;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	letter-spacing:6px;
+	font-weight:900;
+	font-size:450%;
+	text-align:center;
+	margin-top:0%;
+	filter: drop-shadow(2px 5px 10px rgb(106, 165, 166));
+	animation-name:effect-glitch;
+	animation-duration:3s;
+	animation-iteration-count:infinite;
+	 animation-timing-function:cubic-bezier(4, 0.7, 2, 0.1);
+  }
+/* עיצוב כותרת ראשית */
+  @keyframes effect-glitch{
+	50%{
+	  filter: drop-shadow(30px 13px 9px #e73228);
+	}
+	25%{
+	  filter: drop-shadow(-20px 12px 4px #ff6eff);
+	}
+  }
+/* עיצוב דף כללי */
+  #content{
+	display: flex;
+	flex-direction: row;
+}
+/* עיצוב לחצנים */
+#scramble, .btn  {
+    padding: 10px 20px;
+    margin-left: 47%;
+	margin-top: 1%;
+	border-radius: 4px;
+	background: #001F1F;
+	font: bold 14px Arial;
+	border: 2px solid #001F1F;
+	background: #7bdcdf89;
+	color: #000000;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #7bdcdf89,
+				0 0 25px #7bdcdf89,
+				0 0 50px #7bdcdf89,
+				0 0 100px #7bdcdf89;
+}
+/* עיצוב כללי לחצנים */
+#modal-buttens{
+	display: grid;
+	grid-template-columns: 49% 50%;
+}
+/* עובר על הלחצנים */
+#scramble:hover, .btn:hover {
+	background: #03e9f4;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #03e9f4,
+				0 0 25px #03e9f4,
+				0 0 50px #03e9f4,
+				0 0 100px #03e9f4;
+}
+/* עיצוב לוח משחק */
+#puzzle{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 0%;
+	border: 10px solid #001F1F;
+	border-radius: 5px;
+	margin-right: 32%;
+}
+/* עיצוב לחצנים */
+#puzzle span{
+	position: absolute;
+	width: 95px;
+	height: 95px;
+	border-radius: 10%;
+	box-shadow: -6px -6px 16px 0 #ffffff, 7px 7px 10px -4px rgba(16, 16, 16, 0.27);
+}
+/* לחצנים בהירים */
+#puzzle span.number.light{
+	width: 22%;
+	background-color:  #7bdcdf89;
+	height: 20%;
+}
+/* לחצנים כהים */
+#puzzle span.number.dark{
+	width: 22%;
+	height: 20%;
+	background-color: #edc4bec4;
+}
+/* עיצוב מספרי הלוח */
+#puzzle span.number{
+	cursor: pointer;
+	font: bold 55px/100px Arial;
+	text-align: center;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	color:aquamarine;
+}
+/* עיצוב לחצן ריק */
+#puzzle span.empty{
+	background: transparent;
+	box-shadow: inset 5px 4px 7px 0 rgba(116,150,179,0.32), inset -5px -5px 9px 0 #FFFFFF;
+	border-radius: 15%;
+}
+/* עיצוב הטקסטים */
+#timer, #minutes, .step,p{
+	margin-top: 2%;
+	font-size: 40px;
+	text-align: center;
+	color:palevioletred ;
+	text-shadow: -4px 0 #7beef2;
+	
+}
+/* עיצוב כללי של הטקסים */
+#leftP{
+	display: flex;
+	flex-direction: column;
+	margin-left: 5%;
+}
+/* עיצוב כללי מודל */
+#myModal{
+	display: none; 
+	position: fixed;
+	z-index: 1; 
+	padding-top: 100px; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto;
+    background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4)
+}
+/* עיצוב מודל */
+#allModel{
+	position: relative;
+	background-color: rgba(242, 9, 164, 0.51);
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	height: 80vh;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+/* אנימצית מודל */
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+}
+	@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+ /* עיצוב תמונת המודל */
+#modal-imge{
+	margin-left: 40%;
+}
+#img{
+	width: 40%;
+}

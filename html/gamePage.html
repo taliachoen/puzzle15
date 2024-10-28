@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>15 Puzzle</title>
+	<link rel="stylesheet" href="../css/gamePage.css">
+	<link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+	<h1 id="GAME">15 puzzle</h1>
+	<div id="content">
+		<!-- Creating the timer and player name -->
+		<div id="leftP">
+			<a href="../html/mainPage.html"><img src="../images/home.png"></a>
+			<p id="namePlayer">player name: </p>
+			<p id="minutes"><span id="timer">03:00</span> minutes!</p>
+			<p class="step">your steps:<span class="step" id="stepId">0</span></p>
+		</div>
+		<!-- Creating the game board -->
+		<div id="puzzle"></div>
+	</div>
+	<!-- Start the timer when mixing -->
+	<button id="scramble" onclick="time()">start!!! </button>
+
+<!-- The content of the div below is hidden until victory -->	
+<div id="myModal">
+		<div id="allModel">
+			<div id="modal-header">
+				<p></p>
+				<p></p>
+			</div>
+			<div id="modal-imge">
+				<img id="img">
+			</div>
+			<div id="modal-buttens">
+				<a href="../html/gamePage.html"><button class="btn">  play again </button>></a>
+				<a href="../html/mainPage.html"><button class="btn">   another game </button></a>
+			</div>
+		</div>
+	</div>
+	<script src="../js/gamePage.js"></script>
+</body>
+
+</html>
